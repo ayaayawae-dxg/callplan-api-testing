@@ -1,4 +1,4 @@
-package io.qameta.allure.examples.cucumber7;
+package com.example.cucumberjvm.steps;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -8,10 +8,6 @@ import java.util.Random;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-
-/**
- * @author eroshenkoam (Artem Eroshenko).
- */
 public class WebSteps {
 
     @When("^I open labels page$")
@@ -95,7 +91,7 @@ public class WebSteps {
         try {
             Thread.sleep(1000);
             if (isTimeToThrowException()) {
-                assertEquals(text, "another text");
+                assertEquals("another text", text);
             }
         } catch (InterruptedException e) {
             // do nothing test is dummy
