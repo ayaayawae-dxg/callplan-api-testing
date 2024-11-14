@@ -1,4 +1,4 @@
-package com.example.cucumberjvm;
+package com.callplan.testing;
 
 import org.junit.platform.suite.api.IncludeEngines;
 import org.junit.platform.suite.api.SelectClasspathResource;
