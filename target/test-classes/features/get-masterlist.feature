@@ -3,7 +3,7 @@ Feature: Get Master list
   @smoke
   Scenario: Successfully get master list data
     When I send POST request to "/get-masterlist" with payload:
-      | rayonCode  | TGRVICs01 |
+      | rayonCode  | TGRVIC0101 |
       | companyId  | 1         |
     Then the response status code should be 200
     And the response should contain "success" with value "true"
