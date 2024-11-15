@@ -1,3 +1,7 @@
 "Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
-"","Labels","Delete existing label via api","0","0","1","0","0"
 "","Labels","Create new label via api","0","0","1","0","0"
+"","Get Master list","Successfully get master list data","1","0","0","0","0"
+"","Get Master list","Get master list without required fields","1","0","0","0","0"
+"","Labels","Delete existing label via api","0","0","1","0","0"
+"","Get Master list","Get master list with invalid company ID","0","0","1","0","0"
+"","Get Master list","Get master list with invalid rayon code","0","0","1","0","0"

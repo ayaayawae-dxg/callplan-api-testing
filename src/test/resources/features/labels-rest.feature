@@ -1,4 +1,3 @@
-@allure.label.owner:baev
 Feature: Labels
 
   @smoke

@@ -1,0 +1,3 @@
+src/test/resources/.env
+target/site/allure-maven-plugin/
+target/test-classes/.env

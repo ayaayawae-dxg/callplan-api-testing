@@ -6,9 +6,6 @@ import io.cucumber.java.en.When;
 import static io.qameta.allure.Allure.step;
 
 public class TestSteps {
-  public TestSteps() {
-  }
-
   @When("I create label with title {string} via api")
   public void createLabelWithTitle(final String title) {
     step("POST /repos/:owner/:repo/labels");
