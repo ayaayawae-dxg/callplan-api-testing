@@ -1,8 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: com.callplan.testing.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.224 s <<< FAILURE! -- in com.callplan.testing.RunCucumberTest
-Get Master list.Get Master list - Successfully get master list data -- Time elapsed: 5.551 s <<< FAILURE!
+Tests run: 12, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 7.743 s <<< FAILURE! -- in com.callplan.testing.RunCucumberTest
+Get Best Time Visit.Get Best Time Visit - Get best time visit with invalid start date -- Time elapsed: 0.160 s <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[fals]e> but was:<[tru]e>
+	at com.callplan.testing.steps.CommonSteps.theResponseShouldContainWithValue(CommonSteps.java:51)
+	at ✽.the response should contain "success" with value "false"(classpath:features/get-best-time-visit.feature:69)
+
+Get Master list.Get Master list - Successfully get master list data -- Time elapsed: 2.709 s <<< FAILURE!
 java.lang.AssertionError: 
 Schema validation failed with the following errors:
 Schema validation failed for item at index 1: 
@@ -2115,5 +2120,5 @@ error: instance type (null) does not match any allowed primitive type (allowed: 
      but: was "{\"RAYON_ID\":2952,\"RAYON_CODE\":\"TGRVIC0101\",\"AREA_ID\":40,\"AREA_CODE\":\"TGR\",\"PERSON_ID\":61420,\"PERSON_CODE\":\"CRM671302001139\",\"PERSON_TYPE_NAME\":\"CRM\",\"FIRST_NAME\":\"YUL****\",\"LAST_NAME\":\"FIR****\",\"FULL_NAME\":\"YUL**** FIR****\",\"SPECIALIST_NAME\":\"GP\",\"IS_UPCOUNTRY\":null,\"TOTAL_SCHEDULE\":0,\"IS_HAVING_BEST_TIME_VISIT\":0,\"MONDAY_DAY\":0,\"MONDAY_NIGHT\":0,\"TUESDAY_DAY\":0,\"TUESDAY_NIGHT\":0,\"WEDNESDAY_DAY\":0,\"WEDNESDAY_NIGHT\":0,\"THURSDAY_DAY\":0,\"THURSDAY_NIGHT\":0,\"FRIDAY_DAY\":0,\"FRIDAY_NIGHT\":0,\"PERSON_TYPE_DAY_NIGHT\":null}"
 
 	at com.callplan.testing.steps.api.GetMasterListSteps.eachMasterListDataShouldMatchSchema(GetMasterListSteps.java:54)
-	at ✽.each master list data should match schema(classpath:features/get-masterlist.feature:11)
+	at ✽.each master list data should match schema(classpath:features/get-master-list.feature:11)
 

@@ -1,5 +1,6 @@
-com\callplan\testing\steps\TestSteps.class
 com\callplan\testing\steps\api\GetMasterListSteps.class
-com\callplan\testing\RunCucumberTest.class
 com\callplan\testing\steps\CommonSteps.class
 com\callplan\testing\steps\TestContext.class
+com\callplan\testing\steps\TestSteps.class
+com\callplan\testing\RunCucumberTest.class
+com\callplan\testing\steps\api\GetBestTimeVisitSteps.class
