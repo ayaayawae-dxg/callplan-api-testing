@@ -34,10 +34,7 @@ public class TestContext {
             .header("api-key", props.getProperty("API_KEY"));
   }
 
-  public static RequestSpecification getRequest() throws IOException {
-    if (instance == null) {
-      new TestContext();
-    }
+  public static RequestSpecification getRequest() {
     return request;
   }
 

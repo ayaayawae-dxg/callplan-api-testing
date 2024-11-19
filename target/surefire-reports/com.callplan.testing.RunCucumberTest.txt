@@ -1,13 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: com.callplan.testing.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 7.743 s <<< FAILURE! -- in com.callplan.testing.RunCucumberTest
-Get Best Time Visit.Get Best Time Visit - Get best time visit with invalid start date -- Time elapsed: 0.160 s <<< FAILURE!
+Tests run: 13, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 8.931 s <<< FAILURE! -- in com.callplan.testing.RunCucumberTest
+Get Best Time Visit.Get Best Time Visit - Get best time visit with invalid start date -- Time elapsed: 0.163 s <<< FAILURE!
 org.junit.ComparisonFailure: expected:<[fals]e> but was:<[tru]e>
 	at com.callplan.testing.steps.CommonSteps.theResponseShouldContainWithValue(CommonSteps.java:51)
 	at ✽.the response should contain "success" with value "false"(classpath:features/get-best-time-visit.feature:69)
 
-Get Master list.Get Master list - Successfully get master list data -- Time elapsed: 2.709 s <<< FAILURE!
+Get Master list.Get Master list - Successfully get master list data -- Time elapsed: 2.480 s <<< FAILURE!
 java.lang.AssertionError: 
 Schema validation failed with the following errors:
 Schema validation failed for item at index 1: 
@@ -2121,4 +2121,9 @@ error: instance type (null) does not match any allowed primitive type (allowed: 
 
 	at com.callplan.testing.steps.api.GetMasterListSteps.eachMasterListDataShouldMatchSchema(GetMasterListSteps.java:54)
 	at ✽.each master list data should match schema(classpath:features/get-master-list.feature:11)
+
+Save Best Time Visit.Save Best Time Visit - Successfully save best time visit data -- Time elapsed: 0.169 s <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[tru]e> but was:<[fals]e>
+	at com.callplan.testing.steps.CommonSteps.theResponseShouldContainWithValue(CommonSteps.java:51)
+	at ✽.the response should contain "success" with value "true"(classpath:features/save-best-time-visit.feature:70)
 
