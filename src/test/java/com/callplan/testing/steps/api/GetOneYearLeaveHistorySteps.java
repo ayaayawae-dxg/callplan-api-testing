@@ -8,8 +8,6 @@ import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-import java.io.IOException;
-import java.util.List;
 import java.util.Map;
 
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
@@ -18,10 +16,10 @@ import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.Matchers.hasSize;
 import static org.junit.Assert.*;
 
-public class GetOneYearLeaveHistory {
+public class GetOneYearLeaveHistorySteps {
   private final RequestSpecification request;
 
-  public GetOneYearLeaveHistory() {
+  public GetOneYearLeaveHistorySteps() {
     this.request = TestContext.getRequest();
   }
 
