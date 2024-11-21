@@ -1,0 +1,5 @@
+# Created at 2024-11-20T16:45:48.908
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Learning\Revou\QA\CallPlan-Testing\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+
