@@ -4,4 +4,5 @@ com\callplan\testing\steps\CommonSteps.class
 com\callplan\testing\steps\TestContext.class
 com\callplan\testing\steps\api\SaveBestTimeVisitSteps.class
 com\callplan\testing\RunCucumberTest.class
+com\callplan\testing\steps\api\GetOneYearLeaveHistory.class
 com\callplan\testing\steps\api\GetBestTimeVisitSteps.class

@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "LEAVE_DESC": {
+        "type": "string"
+      },
+      "LEAVE_START": {
+        "type": "string",
+        "pattern": "^\\d{2}/\\d{2}/\\d{4}$"
+      },
+      "LEAVE_END": {
+        "type": "string",
+        "pattern": "^\\d{2}/\\d{2}/\\d{4}$"
+      }
+    },
+    "required": ["LEAVE_DESC", "LEAVE_START", "LEAVE_END"],
+    "additionalProperties": false
+  }
+}
+

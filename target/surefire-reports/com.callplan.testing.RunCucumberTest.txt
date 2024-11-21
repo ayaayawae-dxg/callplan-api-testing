@@ -1,9 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.callplan.testing.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.895 s <<< FAILURE! -- in com.callplan.testing.RunCucumberTest
-Create Doctor Leave.Create Doctor Leave - Successfully create doctor leave data -- Time elapsed: 3.022 s <<< FAILURE!
-java.lang.AssertionError: Leave period overlaps with existing leave
-	at com.callplan.testing.steps.api.CreateDoctorLeaveSteps.leavePeriodIsNotSetYetForTheSelectedDate(CreateDoctorLeaveSteps.java:49)
-	at ✽.Leave period is not set yet for the selected date:(classpath:features/create-doctor-leave.feature:5)
-
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.776 s -- in com.callplan.testing.RunCucumberTest
