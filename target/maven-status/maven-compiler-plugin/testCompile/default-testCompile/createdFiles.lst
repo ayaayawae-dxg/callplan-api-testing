@@ -4,10 +4,11 @@ com\callplan\testing\steps\TestContext.class
 com\callplan\testing\utils\AllureUtils.class
 com\callplan\testing\RunCucumberTest.class
 com\callplan\testing\steps\api\GetBestTimeVisitSteps.class
-com\callplan\testing\steps\api\GetExistingCallRealization.class
 com\callplan\testing\steps\api\GetOutletSteps.class
 com\callplan\testing\steps\api\GetMasterListSteps.class
 com\callplan\testing\steps\api\GetCallPlanRecommendationSteps.class
+com\callplan\testing\steps\api\GetPublicHolidaySteps.class
 com\callplan\testing\steps\api\GetCallPlanByRayonSteps.class
 com\callplan\testing\steps\api\SaveBestTimeVisitSteps.class
+com\callplan\testing\steps\api\GetExistingCallRealizationSteps.class
 com\callplan\testing\steps\api\GetOneYearLeaveHistorySteps.class

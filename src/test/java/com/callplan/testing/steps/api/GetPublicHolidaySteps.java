@@ -13,43 +13,49 @@ import java.util.Map;
 
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.greaterThan;
+import static org.hamcrest.Matchers.hasSize;
 import static org.junit.Assert.fail;
 
-public class GetExistingCallRealization {
+public class GetPublicHolidaySteps {
   private final RequestSpecification request;
 
-  public GetExistingCallRealization() {
+  public GetPublicHolidaySteps() {
     this.request = TestContext.getRequest();
   }
 
-  @When("I send POST request to get-existing-call-realization with payload:")
-  public void iSendPOSTRequestToGetExistingCallRealizationWithPayload(String docString) throws JsonProcessingException {
+  @When("I send POST request to get-public-holiday with payload:")
+  public void iSendPOSTRequestToGetPublicHolidayWithPayload(String docString) throws JsonProcessingException {
     Map<String, Object> jsonPayload = new ObjectMapper().readValue(docString, Map.class);
 
     AllureUtils.attachJsonToAllure("Request Payload", jsonPayload);
 
     Response response = request
       .body(jsonPayload)
-      .post("/get-existing-call-realization");
+      .post("/get-public-holiday");
         
     TestContext.setResponse(response);
   }
 
-  @And("the response should contain existing call realization data")
-  public void theResponseShouldContainExistingCallRealizationData() {
+  @And("the response should contain empty array of public holiday data")
+  public void theResponseShouldContainEmptyArrayOfPublicHolidayData() {
     Response response = TestContext.getResponse();
-    response.then().body("data.currentPeriod", hasSize(greaterThanOrEqualTo(0)),
-        "data.nextPeriod", hasSize(greaterThanOrEqualTo(0)));
+    response.then().body("data", hasSize(0));
   }
 
-  @And("each existing call realization data should match schema")
-  public void eachExistingCallRealizationDataShouldMatchSchema() {
+  @And("the response should contain array of public holiday data")
+  public void theResponseShouldContainArrayOfPublicHolidayData() {
+    Response response = TestContext.getResponse();
+    response.then().body("data", hasSize(greaterThan(0)));
+  }
+
+  @And("each public holiday data should match schema")
+  public void eachPublicHolidayDataShouldMatchSchema() {
     Response response = TestContext.getResponse();
     ObjectMapper mapper = new ObjectMapper();
     try {
-      String jsonArray = mapper.writeValueAsString(response.jsonPath().getMap("data"));
-      assertThat(jsonArray, matchesJsonSchemaInClasspath("schemas/GetExistingCallRealization.json"));
+      String jsonArray = mapper.writeValueAsString(response.jsonPath().getList("data"));
+      assertThat(jsonArray, matchesJsonSchemaInClasspath("schemas/GetPublicHoliday.json"));
     } catch (JsonProcessingException e) {
       fail("Failed to parse response data: " + e.getMessage());
     }

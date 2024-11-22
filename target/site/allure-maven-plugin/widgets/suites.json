@@ -1,1 +1,1 @@
-{"total":1,"items":[{"uid":"ab7e9ceeb224ea5cd1e15445785b0ad9","name":"Get Existing Call Realization","statistic":{"failed":0,"broken":0,"skipped":0,"passed":7,"unknown":0,"total":7}}]}
+{"total":2,"items":[{"uid":"ab7e9ceeb224ea5cd1e15445785b0ad9","name":"Get Existing Call Realization","statistic":{"failed":0,"broken":0,"skipped":0,"passed":7,"unknown":0,"total":7}},{"uid":"f47d66d18c365f01a527007bfe87f53d","name":"Get Public Holiday","statistic":{"failed":0,"broken":0,"skipped":0,"passed":7,"unknown":0,"total":7}}]}
