@@ -1,0 +1,8 @@
+{
+  "rayonId" : 2952,
+  "rayonCode" : "TGRVIC0101",
+  "personId" : 37697,
+  "personCode" : "CRM130912003798",
+  "email" : "bonaventura.sanjaya@dexagroup.com",
+  "isUpcountry" : 0
+}

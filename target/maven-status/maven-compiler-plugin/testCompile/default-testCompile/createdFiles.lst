@@ -1,6 +1,7 @@
 com\callplan\testing\steps\api\CreateDoctorLeaveSteps.class
 com\callplan\testing\steps\CommonSteps.class
 com\callplan\testing\steps\TestContext.class
+com\callplan\testing\utils\AllureUtils.class
 com\callplan\testing\RunCucumberTest.class
 com\callplan\testing\steps\api\GetBestTimeVisitSteps.class
 com\callplan\testing\steps\api\GetMasterListSteps.class

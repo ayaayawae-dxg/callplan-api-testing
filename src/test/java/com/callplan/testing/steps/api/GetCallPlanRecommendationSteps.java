@@ -1,6 +1,7 @@
 package com.callplan.testing.steps.api;
 
 import com.callplan.testing.steps.TestContext;
+import com.callplan.testing.utils.AllureUtils;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.cucumber.java.en.And;
@@ -26,11 +27,12 @@ public class GetCallPlanRecommendationSteps {
   @When("I send POST request to get-call-plan-recommendation with payload:")
   public void iSendPOSTRequestToGetCallPlanRecommendationWithPayload(String docString) throws JsonProcessingException {
     Map<String, Object> jsonPayload = new ObjectMapper().readValue(docString, Map.class);
-    Allure.addAttachment("Request Payload", "application/json", new ObjectMapper().writeValueAsString(jsonPayload));
+    
+    AllureUtils.attachJsonToAllure("Request Payload", jsonPayload);
 
     Response response = request
-      .body(jsonPayload)
-      .post("/get-call-plan-recommendation");
+        .body(jsonPayload)
+        .post("/get-call-plan-recommendation");
         
     TestContext.setResponse(response);
   }
