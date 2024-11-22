@@ -1,5 +1,0 @@
-{
-  "rayonCode" : "TGRVIC0101",
-  "personCode" : "INVALID PERSON CODE",
-  "companyId" : 1
-}

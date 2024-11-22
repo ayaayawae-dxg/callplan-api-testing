@@ -1,4 +1,4 @@
 "Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
-"","Get Outlet","Get Outlet with invalid value","0","0","3","0","0"
-"","Get Outlet","Successfully get outlet","0","0","1","0","0"
-"","Get Outlet","Get Outlet with missing required field","0","0","3","0","0"
+"","Get Existing Call Realization","Get Existing Call Realization with invalid date value","0","0","3","0","0"
+"","Get Existing Call Realization","Successfully get existing call realization","0","0","1","0","0"
+"","Get Existing Call Realization","Get Existing Call Realization with missing required field","0","0","3","0","0"

@@ -1,5 +1,0 @@
-{
-  "rayonCode" : "TGRVIC0101",
-  "personCode" : "CRM990808003223",
-  "companyId" : 999999999
-}
