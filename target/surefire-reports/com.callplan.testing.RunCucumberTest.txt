@@ -1,4 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: com.callplan.testing.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.776 s -- in com.callplan.testing.RunCucumberTest
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 13.93 s <<< FAILURE! -- in com.callplan.testing.RunCucumberTest
+Get Call Plan By Rayon - Get call plan by rayon with invalid period - Examples.Get Call Plan By Rayon - Get call plan by rayon with invalid period - Examples - Example #1.1 -- Time elapsed: 3.078 s <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[fals]e> but was:<[tru]e>
+	at com.callplan.testing.steps.CommonSteps.theResponseShouldContainWithValue(CommonSteps.java:52)
+	at ✽.the response should contain "success" with value "false"(classpath:features/get-call-plan-by-rayon.feature:31)
+

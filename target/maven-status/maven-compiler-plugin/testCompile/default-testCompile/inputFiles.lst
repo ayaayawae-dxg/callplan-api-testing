@@ -1,8 +1,10 @@
 D:\Learning\Revou\QA\CallPlan-Testing\src\test\java\com\callplan\testing\RunCucumberTest.java
 D:\Learning\Revou\QA\CallPlan-Testing\src\test\java\com\callplan\testing\steps\api\CreateDoctorLeaveSteps.java
 D:\Learning\Revou\QA\CallPlan-Testing\src\test\java\com\callplan\testing\steps\api\GetBestTimeVisitSteps.java
+D:\Learning\Revou\QA\CallPlan-Testing\src\test\java\com\callplan\testing\steps\api\GetCallPlanByRayonSteps.java
+D:\Learning\Revou\QA\CallPlan-Testing\src\test\java\com\callplan\testing\steps\api\GetCallPlanRecommendationSteps.java
 D:\Learning\Revou\QA\CallPlan-Testing\src\test\java\com\callplan\testing\steps\api\GetMasterListSteps.java
-D:\Learning\Revou\QA\CallPlan-Testing\src\test\java\com\callplan\testing\steps\api\GetOneYearLeaveHistory.java
+D:\Learning\Revou\QA\CallPlan-Testing\src\test\java\com\callplan\testing\steps\api\GetOneYearLeaveHistorySteps.java
 D:\Learning\Revou\QA\CallPlan-Testing\src\test\java\com\callplan\testing\steps\api\SaveBestTimeVisitSteps.java
 D:\Learning\Revou\QA\CallPlan-Testing\src\test\java\com\callplan\testing\steps\CommonSteps.java
 D:\Learning\Revou\QA\CallPlan-Testing\src\test\java\com\callplan\testing\steps\TestContext.java

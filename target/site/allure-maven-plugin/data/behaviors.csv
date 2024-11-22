@@ -1,4 +1,3 @@
 "Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
-"","Get One Year Leave History","Get one year leave history with invalid value","0","0","2","0","0"
-"","Get One Year Leave History","Successfully get one year leave history","0","0","1","0","0"
-"","Get One Year Leave History","Get one year leave history with missing required field","0","0","2","0","0"
+"","Get Call Plan By Rayon","Successfully get call plan by rayon","0","0","2","0","0"
+"","Get Call Plan By Rayon","Get call plan by rayon with invalid period","1","0","1","0","0"

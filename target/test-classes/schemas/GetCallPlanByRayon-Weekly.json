@@ -1,0 +1,132 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "RAYON_CODE": {
+        "type": "string"
+      },
+      "RECEIVER_CODE": {
+        "type": "string"
+      },
+      "RECEIVER_NAME": {
+        "type": "string"
+      },
+      "SPECIALIST_NAME": {
+        "type": "string"
+      },
+      "PERSON_TYPE_NAME": {
+        "type": "string"
+      },
+      "DATE_PLAN": {
+        "type": ["string", "null"]
+      },
+      "PERSON_CLASS": {
+        "type": ["string", "null"]
+      },
+      "REALIZATION_A_WEEK": {
+        "type": "integer"
+      },
+      "FREQUENCY_A_WEEK": {
+        "type": "integer"
+      },
+      "REALIZATION_DAY_1": {
+        "type": "integer"
+      },
+      "FREQUENCY_DAY_1": {
+        "type": "integer"
+      },
+      "REALIZATION_DAY_2": {
+        "type": "integer"
+      },
+      "FREQUENCY_DAY_2": {
+        "type": "integer"
+      },
+      "REALIZATION_DAY_3": {
+        "type": "integer"
+      },
+      "FREQUENCY_DAY_3": {
+        "type": "integer"
+      },
+      "REALIZATION_DAY_4": {
+        "type": "integer"
+      },
+      "FREQUENCY_DAY_4": {
+        "type": "integer"
+      },
+      "REALIZATION_DAY_5": {
+        "type": "integer"
+      },
+      "FREQUENCY_DAY_5": {
+        "type": "integer"
+      },
+      "RAYON_ID": {
+        "type": ["integer", "null"]
+      },
+      "AREA_ID": {
+        "type": ["integer", "null"]
+      },
+      "AREA_CODE": {
+        "type": ["string", "null"]
+      },
+      "PERSON_ID": {
+        "type": ["integer", "null"]
+      },
+      "PERSON_CODE": {
+        "type": ["string", "null"]
+      },
+      "FIRST_NAME": {
+        "type": ["string", "null"]
+      },
+      "LAST_NAME": {
+        "type": ["string", "null"]
+      },
+      "FULL_NAME": {
+        "type": ["string", "null"]
+      },
+      "IS_UPCOUNTRY": {
+        "type": ["integer", "null"]
+      },
+      "TOTAL_SCHEDULE": {
+        "type": ["integer", "null"]
+      },
+      "IS_HAVING_BEST_TIME_VISIT": {
+        "type": ["integer", "null"]
+      },
+      "MONDAY_DAY": {
+        "type": ["integer", "null"]
+      },
+      "MONDAY_NIGHT": {
+        "type": ["integer", "null"]
+      },
+      "TUESDAY_DAY": {
+        "type": ["integer", "null"]
+      },
+      "TUESDAY_NIGHT": {
+        "type": ["integer", "null"]
+      },
+      "WEDNESDAY_DAY": {
+        "type": ["integer", "null"]
+      },
+      "WEDNESDAY_NIGHT": {
+        "type": ["integer", "null"]
+      },
+      "THURSDAY_DAY": {
+        "type": ["integer", "null"]
+      },
+      "THURSDAY_NIGHT": {
+        "type": ["integer", "null"]
+      },
+      "FRIDAY_DAY": {
+        "type": ["integer", "null"]
+      },
+      "FRIDAY_NIGHT": {
+        "type": ["integer", "null"]
+      },
+      "PERSON_TYPE_DAY_NIGHT": {
+        "type": ["string", "null"]
+      }
+    }
+  }
+}
