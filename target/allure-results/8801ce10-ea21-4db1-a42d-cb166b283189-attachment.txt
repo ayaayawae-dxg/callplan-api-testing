@@ -1,7 +1,0 @@
-{
-  "employeeId" : "10200015052",
-  "rayonCode" : "TGRVIC0101",
-  "period" : "2024-03-21",
-  "companyId" : 1,
-  "isWeekly" : false
-}

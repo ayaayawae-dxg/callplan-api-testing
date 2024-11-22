@@ -1,3 +1,0 @@
-{
-  "rayonCode" : "TGRVIC0101"
-}
