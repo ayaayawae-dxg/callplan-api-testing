@@ -17,14 +17,13 @@ import static org.junit.Assert.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class GetMasterListSteps {
-  private final Response response;
 
   public GetMasterListSteps() throws IOException {
-    this.response = TestContext.getResponse();
   }
 
   @And("the response should contain array of master list data")
   public void theResponseShouldContainArrayOfMasterListData() {
+    Response response = TestContext.getResponse();
     List<Map<String, Object>> masterList = response.jsonPath().getList("data");
     assertNotNull("Master list data should not be null", masterList);
     assertFalse("Master list should not be empty", masterList.isEmpty());
@@ -32,6 +31,7 @@ public class GetMasterListSteps {
 
   @And("each master list data should match schema")
   public void eachMasterListDataShouldMatchSchema() throws JsonProcessingException {
+    Response response = TestContext.getResponse();
     List<Map<String, Object>> masterList = response.jsonPath().getList("data");
     StringBuilder errorMessages = new StringBuilder();
     ObjectMapper objectMapper = new ObjectMapper();
@@ -57,6 +57,7 @@ public class GetMasterListSteps {
 
   @And("the response should contain empty array of master list data")
   public void theResponseShouldContainEmptyArrayOfMasterListData() {
+    Response response = TestContext.getResponse();
     List<Map<String, Object>> masterList = response.jsonPath().getList("data");
     assertTrue("Master list should be empty", masterList.isEmpty());
   }

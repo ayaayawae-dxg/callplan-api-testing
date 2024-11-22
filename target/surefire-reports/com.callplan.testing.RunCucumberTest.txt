@@ -1,28 +1,23 @@
 -------------------------------------------------------------------------------
 Test set: com.callplan.testing.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 32, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 40.48 s <<< FAILURE! -- in com.callplan.testing.RunCucumberTest
-Create Doctor Leave.Create Doctor Leave - Successfully create doctor leave data -- Time elapsed: 2.679 s <<< FAILURE!
+Tests run: 31, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 39.41 s <<< FAILURE! -- in com.callplan.testing.RunCucumberTest
+Create Doctor Leave.Create Doctor Leave - Successfully create doctor leave data -- Time elapsed: 2.677 s <<< FAILURE!
 java.lang.AssertionError: Leave period overlaps with existing leave
 	at com.callplan.testing.steps.api.CreateDoctorLeaveSteps.leavePeriodIsNotSetYetForTheSelectedDate(CreateDoctorLeaveSteps.java:51)
 	at ✽.Leave period is not set yet for the selected date:(classpath:features/create-doctor-leave.feature:5)
 
-Create Doctor Leave.Create Doctor Leave - Create doctor leave with leave start date is greater than leave end date -- Time elapsed: 0.568 s <<< FAILURE!
+Create Doctor Leave.Create Doctor Leave - Create doctor leave with leave start date is greater than leave end date -- Time elapsed: 0.124 s <<< FAILURE!
 java.lang.AssertionError: Leave period overlaps with existing leave
 	at com.callplan.testing.steps.api.CreateDoctorLeaveSteps.leavePeriodIsNotSetYetForTheSelectedDate(CreateDoctorLeaveSteps.java:51)
 	at ✽.Leave period is not set yet for the selected date:(classpath:features/create-doctor-leave.feature:81)
 
-Get Best Time Visit.Get Best Time Visit - Get best time visit with invalid start date -- Time elapsed: 0.934 s <<< FAILURE!
-org.junit.ComparisonFailure: expected:<[fals]e> but was:<[tru]e>
-	at com.callplan.testing.steps.CommonSteps.theResponseShouldContainWithValue(CommonSteps.java:52)
-	at ✽.the response should contain "success" with value "false"(classpath:features/get-best-time-visit.feature:69)
-
-Get Call Plan By Rayon - Get call plan by rayon with invalid period - Examples.Get Call Plan By Rayon - Get call plan by rayon with invalid period - Examples - Example #1.1 -- Time elapsed: 3.008 s <<< FAILURE!
+Get Call Plan By Rayon - Get call plan by rayon with invalid period - Examples.Get Call Plan By Rayon - Get call plan by rayon with invalid period - Examples - Example #1.1 -- Time elapsed: 2.938 s <<< FAILURE!
 org.junit.ComparisonFailure: expected:<[fals]e> but was:<[tru]e>
 	at com.callplan.testing.steps.CommonSteps.theResponseShouldContainWithValue(CommonSteps.java:52)
 	at ✽.the response should contain "success" with value "false"(classpath:features/get-call-plan-by-rayon.feature:31)
 
-Get Master list.Get Master list - Successfully get master list data -- Time elapsed: 2.005 s <<< FAILURE!
+Get Master list.Get Master list - Successfully get master list data -- Time elapsed: 2.065 s <<< FAILURE!
 java.lang.AssertionError: 
 Schema validation failed with the following errors:
 Schema validation failed for item at index 0: 
@@ -2149,7 +2144,7 @@ error: instance type (null) does not match any allowed primitive type (allowed: 
 	at com.callplan.testing.steps.api.GetMasterListSteps.eachMasterListDataShouldMatchSchema(GetMasterListSteps.java:54)
 	at ✽.each master list data should match schema(classpath:features/get-master-list.feature:11)
 
-Save Best Time Visit.Save Best Time Visit - Save best time visit data with duplicate time schedule -- Time elapsed: 0.140 s <<< FAILURE!
+Save Best Time Visit.Save Best Time Visit - Save best time visit data with duplicate time schedule -- Time elapsed: 0.107 s <<< FAILURE!
 org.junit.ComparisonFailure: expected:<[fals]e> but was:<[tru]e>
 	at com.callplan.testing.steps.CommonSteps.theResponseShouldContainWithValue(CommonSteps.java:52)
 	at ✽.the response should contain "success" with value "false"(classpath:features/save-best-time-visit.feature:174)
