@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
+import io.qameta.allure.Allure;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
@@ -26,9 +27,10 @@ public class CreateDoctorLeaveSteps {
     this.request = TestContext.getRequest();
   }
 
-  @When("I send POST request to \\/create-doctor-leave with payload:")
+  @When("I send POST request to create-doctor-leave with payload:")
   public void iSendPOSTRequestToCreateDoctorLeaveWithPayload(String docString) throws JsonProcessingException {
     Map<String, Object> jsonPayload = new ObjectMapper().readValue(docString, Map.class);
+    Allure.addAttachment("Request Payload", "application/json", new ObjectMapper().writeValueAsString(jsonPayload));
 
     Response response = request
       .body(jsonPayload)

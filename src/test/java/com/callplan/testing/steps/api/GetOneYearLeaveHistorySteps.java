@@ -5,6 +5,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
+import io.qameta.allure.Allure;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
@@ -23,10 +24,11 @@ public class GetOneYearLeaveHistorySteps {
     this.request = TestContext.getRequest();
   }
 
-  @When("I send POST request to \\/get-one-year-leave-history with payload:")
+  @When("I send POST request to get-one-year-leave-history with payload:")
   public void iSendPOSTRequestToGetOneYearLeaveHistoryWithPayload(String docString) throws JsonProcessingException {
     Map<String, Object> jsonPayload = new ObjectMapper().readValue(docString, Map.class);
-    
+    Allure.addAttachment("Request Payload", "application/json", new ObjectMapper().writeValueAsString(jsonPayload));
+
     Response response = request
       .body(jsonPayload)
       .post("/get-one-year-leave-history");
