@@ -1,10 +1,7 @@
 name: Allure Report
 run-name: ${{ github.actor }} is creating Allure report 🚀
 
-on:
-  push:
-    branches-ignore:
-      - "!main"
+on: [push]
 
 jobs:
   autotests:
