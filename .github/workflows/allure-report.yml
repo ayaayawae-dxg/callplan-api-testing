@@ -23,8 +23,10 @@ jobs:
 
       - name: Create .env file
         run: |
+          touch src/test/resources/.env
           echo "BASE_URL=${{ secrets.BASE_URL }}" > src/test/resources/.env
           echo "API_KEY=${{ secrets.API_KEY }}" >> src/test/resources/.env
+          cat src/test/resources/.env
 
       - name: Run Test
         run: ./mvnw test
