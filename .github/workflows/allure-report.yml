@@ -26,7 +26,7 @@ jobs:
           cat src/test/resources/.env
 
       - name: Run Test
-        run: ./mvnw test
+        run: ./mvnw clean test
         continue-on-error: true
 
       - name: Setup Allure History
