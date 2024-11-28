@@ -1,0 +1,5 @@
+{
+  "rayonCode" : "TGRVIC0101",
+  "startDate" : "2024-05-06",
+  "endDate" : "INVALID DATE"
+}

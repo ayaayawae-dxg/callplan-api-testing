@@ -1,0 +1,4 @@
+{
+  "startDate" : "INVALID DATE",
+  "endDate" : "2024-02-25"
+}

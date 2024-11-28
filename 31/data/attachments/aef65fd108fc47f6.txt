@@ -1,0 +1,9 @@
+{
+  "rayonCode" : "TGRVIC0101",
+  "companyId" : 1,
+  "positionCode" : "MR",
+  "year" : 2024,
+  "month" : 11,
+  "date" : 25,
+  "isWeekly" : true
+}
