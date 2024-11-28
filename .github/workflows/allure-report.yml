@@ -22,7 +22,7 @@ jobs:
           cache: maven
 
       - name: Run Test
-        run: ./gradlew test
+        run: ./mvnw test
         continue-on-error: true
 
       - name: Setup Allure History
