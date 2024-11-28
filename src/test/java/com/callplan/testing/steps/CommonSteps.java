@@ -43,7 +43,6 @@ public class CommonSteps {
   @Then("the response status code should be {int}")
   public void theResponseStatusCodeShouldBe(final int statusCode) {
     Response response = TestContext.getResponse();
-    System.out.println(response.getBody().asString());
     assertEquals(statusCode, response.getStatusCode());
   }
 
