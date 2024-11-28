@@ -32,26 +32,12 @@ public class GetMasterListSteps {
   @And("each master list data should match schema")
   public void eachMasterListDataShouldMatchSchema() throws JsonProcessingException {
     Response response = TestContext.getResponse();
-    List<Map<String, Object>> masterList = response.jsonPath().getList("data");
-    StringBuilder errorMessages = new StringBuilder();
-    ObjectMapper objectMapper = new ObjectMapper();
-    boolean allMatchSchema = true;
-    int index = 0;
-
-    for (Map<String, Object> master : masterList) {
-      try {
-        String masterJson = objectMapper.writeValueAsString(master);
-        assertThat(masterJson, matchesJsonSchemaInClasspath("schemas/GetMasterList.json"));
-      } catch (AssertionError e) {
-        allMatchSchema = false;
-        errorMessages.append(String.format("Schema validation failed for item at index %d: %s%n", 
-            index, e.getMessage()));
-      }
-      index++;
-    }
-
-    if (!allMatchSchema) {
-      fail("Schema validation failed with the following errors:\n" + errorMessages.toString());
+    ObjectMapper mapper = new ObjectMapper();
+    try {
+      String jsonArray = mapper.writeValueAsString(response.jsonPath().getList("data"));
+      assertThat(jsonArray, matchesJsonSchemaInClasspath("schemas/GetMasterList.json"));
+    } catch (JsonProcessingException e) {
+      fail("Failed to parse response data: " + e.getMessage());
     }
   }
 

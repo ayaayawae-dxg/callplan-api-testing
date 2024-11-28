@@ -9,6 +9,7 @@ import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
+import java.io.IOException;
 import java.util.Map;
 
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
@@ -20,7 +21,7 @@ import static org.junit.Assert.fail;
 public class GetOutletSteps {
   private final RequestSpecification request;
 
-  public GetOutletSteps() {
+  public GetOutletSteps() throws IOException {
     this.request = TestContext.getRequest();
   }
 

@@ -10,6 +10,7 @@ import io.qameta.allure.Allure;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
+import java.io.IOException;
 import java.util.Map;
 
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
@@ -20,7 +21,7 @@ import static org.junit.Assert.fail;
 public class GetCallPlanByRayonSteps {
   private final RequestSpecification request;
 
-  public GetCallPlanByRayonSteps() {
+  public GetCallPlanByRayonSteps() throws IOException {
     this.request = TestContext.getRequest();
   }
 

@@ -9,6 +9,7 @@ import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
+import java.io.IOException;
 import java.util.Map;
 
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
@@ -19,7 +20,7 @@ import static org.junit.Assert.fail;
 public class GetExistingCallRealizationSteps {
   private final RequestSpecification request;
 
-  public GetExistingCallRealizationSteps() {
+  public GetExistingCallRealizationSteps() throws IOException {
     this.request = TestContext.getRequest();
   }
 

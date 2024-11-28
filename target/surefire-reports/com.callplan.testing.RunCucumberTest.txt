@@ -1,4 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: com.callplan.testing.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.294 s -- in com.callplan.testing.RunCucumberTest
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.797 s <<< FAILURE! -- in com.callplan.testing.RunCucumberTest
+Get Feedback Question.Get Feedback Question - Get feedback question with missing week number -- Time elapsed: 0.186 s <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[fals]e> but was:<[tru]e>
+	at com.callplan.testing.steps.CommonSteps.theResponseShouldContainWithValue(CommonSteps.java:52)
+	at ✽.the response should contain "success" with value "false"(classpath:features/get-feedback-question.feature:32)
+

@@ -1,4 +1,0 @@
-{
-  "rayonCode" : "TGRVIC0101",
-  "endDate" : "2024-11-10"
-}
